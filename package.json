@@ -1,0 +1,27 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Piano viewing blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bader322/blog.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Bader Alsaleh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bader322/blog/issues"
+  },
+  "homepage": "https://github.com/Bader322/blog#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "startbootstrap-clean-blog": "^5.0.8"
+  }
+}
