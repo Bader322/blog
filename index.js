@@ -1,31 +1,38 @@
 
 
 const path = require('path');
- 
 const express = require('express');
- 
-const app = express();
- 
-const edge = require('edge.js')
+const app = new express();
+const expressEdge = require('express-edge');
 
 app.use(express.static('public'));
- 
+app.use(expressEdge.engine);
+// app.set('views', __dirname + '/views');
 
 
 
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'pages/index.html'));
+  res.render('index');
 });
 
-
 app.get('/index', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'pages/index.html'));
+  res.render('index');
+});
+
+app.get('/contact', (req, res) => {
+  res.render('contact');
 });
 
 // Routes, nav bar links
 
+// app.get('/', (req, res) => {
+//   res.render('index.edge');
+// });
 
 
+// app.get('/index', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, 'pages/index.html'));
+// });
 
 
 
