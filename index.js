@@ -19,9 +19,12 @@ app.get('/index', (req, res) => {
   res.render('index');
 });
 
-//  So far this has no page in edge
 app.get('/contact', (req, res) => {
   res.render('contact');
+});
+
+app.get('/about', (req, res) => {
+  res.render('about');
 });
 
 // Routes, nav bar links
