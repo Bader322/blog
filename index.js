@@ -27,15 +27,13 @@ app.get('/about', (req, res) => {
   res.render('about');
 });
 
-// Routes, nav bar links
 
 app.get('/post', (req, res) => {
-  res.sendFile(path.resolve(__dirname+ '/pages/post.html'));
+  res.render('post');
 });
 
-app.get('/about', (req, res) => {
-    res.sendFile(path.resolve(__dirname+ '/pages/about.html'));
-});
+// Routes, nav bar links
+
  
 app.listen(3000, () => {
     console.log('App listening on port 3000')
