@@ -7,7 +7,7 @@ const expressEdge = require('express-edge');
 
 app.use(express.static('public'));
 app.use(expressEdge.engine);
-// app.set('views', __dirname + '/views');
+app.set('views', __dirname + '/views');
 
 
 
@@ -19,26 +19,12 @@ app.get('/index', (req, res) => {
   res.render('index');
 });
 
+//  So far this has no page in edge
 app.get('/contact', (req, res) => {
   res.render('contact');
 });
 
 // Routes, nav bar links
-
-// app.get('/', (req, res) => {
-//   res.render('index.edge');
-// });
-
-
-// app.get('/index', (req, res) => {
-//   res.sendFile(path.resolve(__dirname, 'pages/index.html'));
-// });
-
-
-
-app.get('/contact', (req, res) => {
-  res.sendFile(path.resolve(__dirname+ '/pages/contact.html'));
-});
 
 app.get('/post', (req, res) => {
   res.sendFile(path.resolve(__dirname+ '/pages/post.html'));
