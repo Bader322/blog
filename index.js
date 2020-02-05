@@ -4,13 +4,13 @@ const path = require('path');
 const express = require('express');
 const app = new express();
 const expressEdge = require('express-edge');
-
+const mongoose = require('mongoose');
 app.use(express.static('public'));
 app.use(expressEdge.engine);
-app.set('views', __dirname + '/views');
 
 
 
+// Routes, nav bar links
 app.get('/', (req, res) => {
   res.render('index');
 });
@@ -32,7 +32,7 @@ app.get('/post', (req, res) => {
   res.render('post');
 });
 
-// Routes, nav bar links
+
 
  
 app.listen(3000, () => {
