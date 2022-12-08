@@ -25,6 +25,6 @@
     "express-edge": "^2.0.1",
     "mongoose": "^5.8.10",
     "nodemon": "^2.0.2",
-    "startbootstrap-clean-blog": "^5.0.8"
+    "startbootstrap-clean-blog": "^5.1.0"
   }
 }
