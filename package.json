@@ -21,7 +21,7 @@
   "homepage": "https://github.com/Bader322/blog#readme",
   "dependencies": {
     "edge.js": "^1.1.4",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-edge": "^2.0.1",
     "mongoose": "^5.8.10",
     "nodemon": "^2.0.2",
